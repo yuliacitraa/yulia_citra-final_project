@@ -9,50 +9,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
+      module.exports = {
         theme: {
           screens: {
             sm: "320px",
-          },
-          extend: {
-            colors: {
-              dogwoodrose: "#C33764",
-              patricblue: "#1D2671",
-            },
           },
         },
       };
     </script>
   </head>
   <body class="bg-gradient-to-r from-pink-500 to-indigo-900">
-    <div class="container bg-white m-20 rounded-3xl">
+    <div class="bg-white m-16 rounded-3xl h-auto p- shadow-lg">
+      <!-- header -->
       <div class="header bg-purple-700 h-1/4 rounded-t-3xl">
-        <h1 class="text-white p-10 font-bold text-4xl">
-          Helo! I'm Yulia Citra
-        </h1>
-        <p class="text-white px-10">
+        <h1 class="text-white p-9 font-bold text-4xl">Helo! I'm Yulia Citra</h1>
+        <p class="text-white px-9 pb-8">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quisquam
           harum pariatur temporibus quaerat qui, voluptas numquam cum tenetur!
           Quos.
         </p>
       </div>
-      <div class="education">
-        <h1>Latar Belakang</h1>
-        <div>
-          <div>
-            <h2>SMP Negeri 1 Pameungpeuk</h2>
-            <p>20.. - 20..</p>
+
+      <!-- education  -->
+      <div class="education p-9">
+        <h1 class="text-2xl font-bold pb-4">Latar Belakang</h1>
+        <div class="flex space-x-8">
+          <div class=" sm:mb-5">
+            <h2 class="font-semibold">SMP Negeri 1 Pameungpeuk</h2>
+            <p>2015 - 2017</p>
           </div>
-          <div>
-            <h2>SMA Negeri 1 Dayeuhkolot</h2>
+          <div class=" sm:mb-5">
+            <h2 class="font-semibold">SMA Negeri 1 Dayeuhkolot</h2>
             <p>2017-2020</p>
           </div>
-          <div>
-            <h2>Universitas Langlang Buana S1 Teknik Informatika</h2>
+          <div class=" sm:mb-5">
+            <h2 class="font-semibold">
+              Universitas Langlang Buana S1 Teknik Informatika
+            </h2>
             <p>2020-sekarang</p>
           </div>
         </div>
       </div>
+
+      <!-- portofolio -->
+      <div class="portofolio px-9 pb-9">
+        <h1 class="text-2xl font-bold pb-4">Portofolio</h1>
+        <div class="">
+          <div class="max-w-sm p-3 rounded-2xl">
+          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 hover:opacity-100 transition duration-1000 hover:duration-200"></div>
+            <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+        
+          <div class="h-48 bg-gray-50 overflow-hidden rounded-2xl">
+                <img class="" src="dummy.jpg" alt="">
+              </div>
+              <h2 class="font-semibold text-lg px-3 pt-4">Lorem Ipsum</h2>
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                rem facilis perspiciatis
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="relative group">
+            </div>
+          </div>
+
     </div>
   </body>
 </html>
