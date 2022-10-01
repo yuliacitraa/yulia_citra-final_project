@@ -1,0 +1,9 @@
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  height: 1000px;
+}
